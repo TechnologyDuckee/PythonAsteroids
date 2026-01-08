@@ -1,10 +1,11 @@
-import CircleShape
+import circleshape
 import constants
+import pygame
 
-class Player(CircleShape):
+class Player(circleshape.CircleShape):
     def __init__(self, x, y):
-        super().__init__(x, y, constants.PLAYER_RADIUS, constants.LINE_WIDTH)
-        rotation = 0
+        super().__init__(x, y, constants.PLAYER_RADIUS)
+        self.rotation = 0
 
     # in the Player class
     def triangle(self):
