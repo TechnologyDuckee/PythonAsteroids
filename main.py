@@ -23,6 +23,9 @@ def main():
                 pygame.quit()
                 return
     
+        # -------- Update --------
+        player.update(dt)
+        
         # -------- Draw --------
         screen.fill("black")
         player.draw(screen)
